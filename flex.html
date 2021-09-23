@@ -1,0 +1,53 @@
+<div class='container'>
+    <div class='outside'>
+        <div class='row1'>
+            <div class='inside'></div>
+            <div class='inside'></div>
+            <div class='inside'></div>
+        </div>
+        <div class='row1'>
+            <div class='inside'></div>
+            <div class='inside'></div>
+        </div>
+        <div class='row1'>
+            <div class='inside'></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        vertical-align: center;
+    }
+    
+    .outside {
+        display: flex;
+        border: 2px solid;
+        width: 200px;
+        height: 200px;
+        border-radius: 2%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .row1 {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        justify-content: space-between;
+    }
+    
+    .inside {
+        background-color: chartreuse;
+        border-radius: 50%;
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .row1:nth-child(3) {
+        justify-content: center;
+    }
+</style>
